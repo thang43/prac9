@@ -144,9 +144,9 @@ int Polish::calculate(int count)
         {
             if (count!=0)
             cout<<"(";
-            int first = calculate(1);
+            int first = calculate(0);
             cout<<" + ";
-            int second = calculate(1);
+            int second = calculate(0);
             if (count!=0)
             cout<<")";
             return first+second;
@@ -155,9 +155,9 @@ int Polish::calculate(int count)
         {
             if (count!=0)
             cout<<"(";
-            int first = calculate(1);
+            int first = calculate(0);
             cout<<" - ";
-            int second = calculate(1);
+            int second = calculate(0);
             if (count!=0)
             cout<<")";
             return first-second;
