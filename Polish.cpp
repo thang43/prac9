@@ -30,6 +30,11 @@ void Polish::string_handle(string s)
             int num = 0;
             if(i==s.length()-1)
             {
+                if(this->indicator.back()==1)
+                {
+                    cout<<"Error5";
+                    exit(-1);
+                }
                 i++;
             }
             for(int j=start;j<i;j++)
@@ -144,9 +149,9 @@ int Polish::calculate(int count)
         {
             if (count!=0)
             cout<<"(";
-            int first = calculate(0);
+            int first = calculate(1);
             cout<<" + ";
-            int second = calculate(0);
+            int second = calculate(1);
             if (count!=0)
             cout<<")";
             return first+second;
@@ -155,9 +160,9 @@ int Polish::calculate(int count)
         {
             if (count!=0)
             cout<<"(";
-            int first = calculate(0);
+            int first = calculate(1);
             cout<<" - ";
-            int second = calculate(0);
+            int second = calculate(1);
             if (count!=0)
             cout<<")";
             return first-second;
