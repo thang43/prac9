@@ -9,7 +9,7 @@ Polish::Polish(string s)
         cout<<"Error";
         exit(-1);
     } 
-    if(this->indicator.front()==0||this->indicator.back()==1)
+    if(this->indicator.front()==0)
     {
         cout<<"Error";
         exit(-1);
