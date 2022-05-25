@@ -32,7 +32,7 @@ void Polish::string_handle(string s)
             {
                 if(this->indicator.back()==1)
                 {
-                    cout<<"Error5";
+                    cout<<"Error";
                     exit(-1);
                 }
                 i++;
