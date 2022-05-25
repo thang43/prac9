@@ -178,7 +178,7 @@ int Polish::calculate(int count)
             int second = calculate(1);
             if(second == 0)
             {
-                cout<<"Error";
+                cout<<endl<<"Error";
                 exit(-1);
             }  
             return first/second;

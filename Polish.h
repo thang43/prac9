@@ -13,7 +13,7 @@ class Polish
     int calculate(int count);
     void string_handle(std::string s);
     private:
-    std :: queue <int> indicator;
+    std:: queue <int> indicator;
     std:: queue <char> op;
     std:: queue <int> operand;
 };
