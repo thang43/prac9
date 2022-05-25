@@ -30,11 +30,7 @@ void Polish::string_handle(string s)
             int num = 0;
             if(i==s.length()-1)
             {
-                if(this->indicator.back()==1)
-                {
-                    cout<<"Error";
-                    exit(-1);
-                }
+                
                 i++;
             }
             for(int j=start;j<i;j++)
