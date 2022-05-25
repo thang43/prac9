@@ -30,7 +30,7 @@ void Polish::string_handle(string s)
             int num = 0;
             if(i==s.length()-1)
             {
-                
+            
                 i++;
             }
             for(int j=start;j<i;j++)
@@ -92,6 +92,11 @@ void Polish::string_handle(string s)
                     num = num*10+int(s[j]-'0');
                     if(j==i-1)
                     {
+                        if(num>99)
+                        {
+                            cout<< "Error";
+                            exit(-1);
+                        }
                         this->indicator.push(0);
                         this->operand.push(num);
                     }
