@@ -180,6 +180,11 @@ int Polish::calculate(int count)
             int first = calculate(1);
             cout<<" / ";
             int second = calculate(1);
+            if(second == 0)
+            {
+                cout<<"Error";
+                exit(-1);
+            }
             if(count!=0)
             cout<<")";
             return first/second;
