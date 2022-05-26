@@ -4,16 +4,22 @@ using namespace std;
 Polish::Polish(string s)
 {
     string_handle(s); 
+    if(s[0]==' ')
+    {
+        cout<<"Error";
+        exit(-1);
+    }
     if (this->op.size()!=this->operand.size()-1)
     {
         cout<<"Error";
         exit(-1);
     } 
-    if(this->indicator.front()==0)
+    if(this->indicator.back()==1)
     {
         cout<<"Error";
         exit(-1);
     }
+
 }
 void Polish::string_handle(string s)
 {
